@@ -138,12 +138,14 @@
 <body>
   <div class="container">
 
+    <!-- I used <header> for the  site heading because it includes a logo and tagline -->
     <header id="header">
-      <div class="logo">Hofstra Student Services</div>
+      <h1 class="logo">Hofstra Student Services</h1>
       <div class="tagline">Updates, deadlines, and announcements</div>
     </header>
 
     <!-- Students should convert this into <nav> containing a real list (<ul><li><a>) -->
+    <!-- I used <nav> for the main menu because the links to other pages are here -->
     <nav id="nav">
       <a href="#">Home</a>
       <a href="#">Announcements</a>
@@ -152,12 +154,15 @@
     </nav>
 
     <div class="layout">
+
+      <!-- I used <main> for the article wrapping because this holds a majority of the page content -->
       <main id="content">
 
         <!-- Students should convert each .post into an <article> with an <h2> -->
+        <!-- I used <article> for each post because they are each their own announcement -->
         <article class="post">
           <!-- Students should convert this into headings (h1h1/h2) and fix hierarchy -->
-          <h2>Registration Reminder</h2>
+          <h2 class="title">Registration Reminder</h2>
           <div class="meta">Posted Feb 12</div>
           <div class="text">
             Course registration closes Friday. Meet with your advisor if you have holds.
@@ -165,7 +170,7 @@
         </article>
 
         <article class="post">
-          <h2>Library Workshop</h2>
+          <h2 class="title">Library Workshop</h2>
           <div class="meta">Posted Feb 10</div>
           <div class="text">
             A research skills workshop is available this week. Limited seats.
@@ -201,4 +206,3 @@
   </div>
 </body>
 </html>
-
