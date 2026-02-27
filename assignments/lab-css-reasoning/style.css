@@ -9,16 +9,3 @@ color: pink;
 #special {
 color: black;
 }
-
-html body p:first-of-type {
-color: gray;
-}
-
-p.highlight {
-  color: blue;
-}
-
-p.highlight {
-  color: green;
-}
-
