@@ -10,10 +10,11 @@ color: pink;
 color: black;
 }
 
-html body p:first-of-type {
+p {
 color: gray;
 }
 
 p.highlight {
   color: blue;
 }
+
