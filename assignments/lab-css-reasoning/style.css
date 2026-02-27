@@ -14,5 +14,8 @@ html body p:first-of-type {
 color: gray;
 }
 
+body p.highlight {
+color: blue;
+}
 
 
