@@ -10,7 +10,8 @@ color: pink;
 color: black;
 }
 
-body p:first-of-type {
+body > p:first-of-type {
 color: gray;
 }
+
 
