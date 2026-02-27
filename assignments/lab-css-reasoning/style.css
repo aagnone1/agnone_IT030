@@ -10,7 +10,7 @@ color: pink;
 color: black;
 }
 
-p {
+html body p:first-of-type {
 color: gray;
 }
 
@@ -21,3 +21,4 @@ p.highlight {
 p.highlight {
   color: green;
 }
+
