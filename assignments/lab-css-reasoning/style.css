@@ -9,3 +9,8 @@ color: pink;
 #special {
 color: black;
 }
+
+
+body p:first-of-type {
+color: gray;
+}
