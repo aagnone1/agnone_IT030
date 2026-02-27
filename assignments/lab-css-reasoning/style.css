@@ -14,9 +14,10 @@ html body p:first-of-type {
 color: gray;
 }
 
-html body p.highlight {
+.highlight:not(#special) {
 color: blue;
 }
+
 
 
 
