@@ -1,0 +1,35 @@
+body div {
+    font-family: monospace;
+    background-color: rgb(230, 217, 255);
+}
+
+ h1.logo, .tagline {
+    font-size: 24px;
+    color: black;
+}
+
+h2 {
+    border-bottom: 2px solid mediumpurple;
+}
+
+p {
+    line-height: 2;
+}
+
+address {
+    font-style: normal;
+}
+
+address a {
+    font-style: italic;
+    color: mediumpurple;
+}
+
+header#header {
+    background: white;
+}
+
+.purple-text { 
+    font-size: 14px;
+    color: indigo;
+}
