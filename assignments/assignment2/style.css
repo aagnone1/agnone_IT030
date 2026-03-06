@@ -40,3 +40,14 @@ header#header {
     margin: auto;
     width: 90%;
 }
+
+h1 {
+    position: fixed;
+    top: 30px;
+    left: 920px;
+}
+
+.tagline {
+    position: relative;
+    top: 20px;
+}
