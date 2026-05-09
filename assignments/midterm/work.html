@@ -1,91 +1,81 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
 <title>Work</title>
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet"/>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BYRYMSJXX9"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BYRYMSJXX9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-BYRYMSJXX9');
 </script>
-
 </head>
-
 <body>
-<div> 
+<div>
 <header>
 <h1>Alex Agnone</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="work.html">Work</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav> 
+<a href="index.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Home</a>
+<a href="about.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">About</a>
+<a href="work.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Work</a>
+<a href="gallery.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Gallery</a>
+<a href="contact.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Contact</a>
+</nav>
 </header>
-
-<main class="split-section-box"
-style="
+<main class="split-section-box" style="
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
     align-items: stretch;
     grid-template-columns: minmax(100px, 1fr) minmax(250px, 1.5fr) minmax(100px, 1fr);">
-
-    <section>
-        <h2>An Oscilloscope</h2>
-        <img src="images/oscilloscope.jpg" alt="A photo of an oscilloscope" title="An oscilloscope">
-    </section>
-
-    <section>
-        <h2>Work</h2>
-        <p>
+<section>
+<h2>An Oscilloscope</h2>
+<img alt="A photo of an oscilloscope" onmouseover="gtag('event', 'image_title_hover', {'image_title': this.getAttribute('title') || 'No title text', 'image_alt': this.getAttribute('alt') || 'No alt text', 'image_src': this.getAttribute('src'), 'page_title': document.title});" src="images/oscilloscope.jpg" title="An oscilloscope"/>
+</section>
+<section>
+<h2>Work</h2>
+<p>
             In my time I have become educated on multiple topics related, but not limited to, computer science, the Microsoft Office Suite, and information systems.
             My experience includes the following languages:
             <ul style="text-align: left;">
-                <li>Python</li>
-                <li>C/C++</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </p>
-    </section>
-
-    <section>
-        <h2>Java IOC Parser</h2>
-        <img src="images/ioc_parser.jpg" alt="A photo of a Java IOC Parser project done at Hofstra" title="Alex Agnone's IOC Parser project">
-    </section>
-
-    <section>
-        <h2>My Niece & I</h2>
-        <img src="images/niece.jpg" alt="Alex's first attempt at making sourdough bread" title="Alex's first attempt at making sourdough bread">
-    </section>
-
-    <section>
-        <h2>Interests</h2>
-        <p>
+<li>Python</li>
+<li>C/C++</li>
+<li>Java</li>
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+</p>
+</section>
+<section>
+<h2>Java IOC Parser</h2>
+<img alt="A photo of a Java IOC Parser project done at Hofstra" onmouseover="gtag('event', 'image_title_hover', {'image_title': this.getAttribute('title') || 'No title text', 'image_alt': this.getAttribute('alt') || 'No alt text', 'image_src': this.getAttribute('src'), 'page_title': document.title});" src="images/ioc_parser.jpg" title="Alex Agnone's IOC Parser project"/>
+</section>
+<section>
+<h2>My Niece & I</h2>
+<img alt="Alex's first attempt at making sourdough bread" onmouseover="gtag('event', 'image_title_hover', {'image_title': this.getAttribute('title') || 'No title text', 'image_alt': this.getAttribute('alt') || 'No alt text', 'image_src': this.getAttribute('src'), 'page_title': document.title});" src="images/niece.jpg" title="Alex's first attempt at making sourdough bread"/>
+</section>
+<section>
+<h2>Interests</h2>
+<p>
             Outside of my academic and professional pursuits, I have a variety of interests.
             I enjoy cooking and baking, and while most of my recipes are Italian, I have multiple experimental dishes from multiple different cultures.
             I also enjoy reading in my free time, particularly sci-fi horror and fantasy novels.
 
         </p>
-    </section>
-
-    <section>
-        <h2>Sourdough Bread</h2>
-        <img src="images/sourdough_bread.jpg" alt="Alex's first attempt at making sourdough bread" title="Alex's first attempt at making sourdough bread">
-    </section>
-
+</section>
+<section>
+<h2>Sourdough Bread</h2>
+<img alt="Alex's first attempt at making sourdough bread" onmouseover="gtag('event', 'image_title_hover', {'image_title': this.getAttribute('title') || 'No title text', 'image_alt': this.getAttribute('alt') || 'No alt text', 'image_src': this.getAttribute('src'), 'page_title': document.title});" src="images/sourdough_bread.jpg" title="Alex's first attempt at making sourdough bread"/>
+</section>
 </main>
-
-    <footer>
-        <p>© 2026 Alex Agnone</p>
-    </footer>
+<footer>
+<p>© 2026 Alex Agnone</p>
+</footer>
 </div>
+
 </body>
 </html>

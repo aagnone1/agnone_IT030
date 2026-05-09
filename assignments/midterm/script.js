@@ -88,7 +88,7 @@ name: "Microsoft Office",
 category: "Experience",
 description: "Proficiency in using Microsoft Office Suite",
 image: "images/msoffice_payroll.jpg",
-title: "An example payroll spreadsheet made in Microsoft Access for a class project"
+title: "An example payroll spreadsheet made in Microsoft Office for a class project"
 },
 {
 name: "Computer Hardware",
@@ -162,10 +162,10 @@ card.className = "item-card";
 // The + operator joins strings together.
 // list[i].name accesses the name property of the current item.
 card.innerHTML =
-"<h3>" + list[i].name + "</h3>" + // TODO 4b — which property is the title?s
-"<p>" + list[i].description + "</p>" + // TODO 4b — which property is the description?
-"<span class='item-tag'>" + list[i].category + "</span>" + // TODO 4b — which property is the label?
-"<img src='" + list[i].image + "' title='" + list[i].title + "'>"; // an addon of my own to show the image for each item
+`<h3>${list[i].name}</h3>
+<p>${list[i].description}</p>
+<span class='item-tag'>${list[i].category}</span>
+<img src="${list[i].image}" alt="${list[i].name}" title="${list[i].title}" onmouseover="gtag('event', 'image_title_hover', {'image_title': this.getAttribute('title') || 'No title text', 'image_alt': this.getAttribute('alt') || 'No alt text', 'image_src': this.getAttribute('src'), 'page_title': document.title});">`;
 container.appendChild(card); // TODO 4c — which variable is the container?
 }
 // ── Update the result count ──────────────────────────────────

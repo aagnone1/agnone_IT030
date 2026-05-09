@@ -21,11 +21,11 @@
 <header>
 <h1>Alex Agnone</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="work.html">Work</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
+<a href="index.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Home</a>
+<a href="about.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">About</a>
+<a href="work.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Work</a>
+<a href="gallery.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Gallery</a>
+<a href="contact.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Contact</a>
 </nav>
 </header>
 

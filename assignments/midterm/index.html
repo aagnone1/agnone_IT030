@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
 <title>Alex Agnone</title>
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet"/>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8KFFDPHGB"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-D8KFFDPHGB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,49 +15,43 @@
   gtag('config', 'G-D8KFFDPHGB');
 </script>
 </head>
-
 <body>
-
 <div>
-
 <header>
-    <h1>Alex Agnone</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<h1>Alex Agnone</h1>
+<nav>
+<a href="index.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Home</a>
+<a href="about.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">About</a>
+<a href="work.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Work</a>
+<a href="gallery.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Gallery</a>
+<a href="contact.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Contact</a>
+</nav>
 </header>
-
 <main class="split-section-box">
-    <section>
-        <h2>Welcome</h2>
-        <p>
+<section>
+<h2>Welcome</h2>
+<p>
             Hello! My name is Alex Agnone and I am 23 years old. I am a junior at Hofstra University studying computer science with a minor in information systems. This page is dedicated to showcasing my knowledge, work, and passions.
         </p>
-    </section>
-
-    <section>
-        <h2>Featured</h2>
-        <p>
+</section>
+<section>
+<h2>Featured</h2>
+<p>
             I am interested in network security and server administration. 
             I have experience with Linux and multiple programming languages. 
             I am looking to pursue a career in network security that coincides with my passion for computer systems and servers.
             I enjoy reading, listening to music, and working on various computer-related projects in my free time.
         </p>
-    </section>
-    <section>
-        <h2>Me</h2>
-        <img style= "width: 250px; height: auto;" src="images/me.jpg" alt="A photo of Alex Agnone" title="A photo of Alex Agnone">
-    </section>
+</section>
+<section>
+<h2>Me</h2>
+<img alt="A photo of Alex Agnone" onmouseover="gtag('event', 'image_title_hover', {'image_title': this.getAttribute('title') || 'No title text', 'image_alt': this.getAttribute('alt') || 'No alt text', 'image_src': this.getAttribute('src'), 'page_title': document.title});" src="images/me.jpg" style="width: 250px; height: auto;" title="A photo of Alex Agnone"/>
+</section>
 </main>
-    
 <footer>
-    <p>© 2026 Alex Agnone</p>
+<p>© 2026 Alex Agnone</p>
 </footer>
+</div>
 
-</div>  
 </body>
 </html>

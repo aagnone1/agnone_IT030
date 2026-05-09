@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
 <title>Contact</title>
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet"/>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8CTH2C6GG"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-D8CTH2C6GG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,44 +14,37 @@
 
   gtag('config', 'G-D8CTH2C6GG');
 </script>
-
 </head>
-
 <body>
-
 <div>
 <header>
 <h1>Alex Agnone</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="work.html">Work</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
+<a href="index.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Home</a>
+<a href="about.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">About</a>
+<a href="work.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Work</a>
+<a href="gallery.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Gallery</a>
+<a href="contact.html" onclick="gtag('event', 'nav_link_click', {'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">Contact</a>
 </nav>
 </header>
-
 <main>
-
 <section>
 <h2>How To Reach Me</h2>
 <p>
     Phone: (516) 506-9186
-</p> 
-    <a href="mailto:aagnone1@pride.hofstra.edu" class="link-text">
+</p>
+<a class="link-text" href="mailto:aagnone1@pride.hofstra.edu" onclick="gtag('event', 'contact_link_click', {'contact_type': 'email', 'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});">
         Email Me
     </a>
 <p>
-    <a href="https://www.linkedin.com/in/alexander-agnone-4a283b364/" class="link-text"> My LinkedIn </a>
-</p>    
+<a class="link-text" href="https://www.linkedin.com/in/alexander-agnone-4a283b364/" onclick="gtag('event', 'contact_link_click', {'contact_type': 'linkedin', 'link_text': this.textContent.trim(), 'link_url': this.getAttribute('href'), 'page_title': document.title});"> My LinkedIn </a>
+</p>
 </section>
-
 </main>
-
-    <footer>
-        <p>© 2026 Alex Agnone</p>
-    </footer>
-
+<footer>
+<p>© 2026 Alex Agnone</p>
+</footer>
 </div>
+
 </body>
 </html>
