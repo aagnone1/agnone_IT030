@@ -59,7 +59,7 @@ const items = [
 name: "C++", // TODO 1 — item name
 category: "Programming", // TODO 1 — must match an <option> value exactly
 description: "A high-level programming language", // TODO 1 — one sentence description
-image: "images/Connect4.jpg", // an addon of my own to show an example picture for each item
+image: "images/connect4.jpg", // an addon of my own to show an example picture for each item
 title: "A Connect 4 game I made in C++" // an addon of my own to provide alt text for the image
 },
 {
@@ -78,13 +78,13 @@ image: "images/shralfredo.jpg"
 name: "Reading",
 category: "Hobby",
 description: "Spending time with books and stories",
-image: "images/Authority.jpg"
+image: "images/authority.jpg"
 },
 {
 name: "Microsoft Office",
 category: "Experience",
 description: "Proficiency in using Microsoft Office Suite",
-image: "images/MSOffice_payroll.jpg"
+image: "images/msoffice_payroll.jpg"
 },
 {
 name: "Computer Hardware",
