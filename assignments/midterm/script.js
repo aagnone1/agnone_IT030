@@ -66,31 +66,36 @@ title: "A Connect 4 game I made in C++" // an addon of my own to provide alt tex
 name: "Python",
 category: "Programming",
 description: "An interpreted programming language",
-image: "images/dice_roller.jpg"
+image: "images/dice_roller.jpg",
+title: "A dice roller program I made in Python"
 },
 {
 name: "Cooking",
 category: "Hobby",
 description: "Preparing and experimenting with recipes",
-image: "images/shralfredo.jpg"
+image: "images/shralfredo.jpg",
+title: "Shrimp alfredo I made for dinner once"
 },
 {
 name: "Reading",
 category: "Hobby",
 description: "Spending time with books and stories",
-image: "images/authority.jpg"
+image: "images/authority.jpg",
+title: "The book 'Authority' by Jeff VanderMeer, my current read"
 },
 {
 name: "Microsoft Office",
 category: "Experience",
 description: "Proficiency in using Microsoft Office Suite",
-image: "images/msoffice_payroll.jpg"
+image: "images/msoffice_payroll.jpg",
+title: "An example payroll spreadsheet made in Microsoft Access for a class project"
 },
 {
 name: "Computer Hardware",
 category: "Experience",
 description: "Understanding and working with computer components",
-image: "images/setup.jpg"
+image: "images/setup.jpg",
+title: "My computer and server setup, showcasing my interest in hardware"
 },
 // You can add more objects here if you want
 ];
